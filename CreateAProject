@@ -1,0 +1,17 @@
+==>Create Project: File -> New -> Project-> Select maven -> click next
+==>Name: mycucumberproject: finish->click on EnableAutoImport(IF YOU SEE)
+==>Add Dependencies : Selenium-java, webdrivermanager,cucumber java, cucumber junit
+-Note that we will add other dependencies that will be used later
+==>Right click on test > java and create the following packages:
+-pages (page objects goes here)
+-runners (to run and control test cases)
+-stepdefinitions(java codes goes here)
+-utilities(reusable support classes goes here)
+-In Utilities package, create classes: Driver,ConfigReader
+-Right click on the projects and Create  configuration.properties file
+-Right click on test and create a new directory: resources
+-Right click on resources and create a new directory: features     (non java staff will go here)
+-right click on features->new->file->firstfeaturefile.feature
+-Add cucumber plugin to work with intelliJ IDE
+-(Mac)IntelliJ Idea->Preference->Plugins->Marketplace->Type Cucumber for Java->Install->Restart
+-(Windows)File->Setting->->Plugins->Marketplace->Type Cucumber for Java->Install->Restart
