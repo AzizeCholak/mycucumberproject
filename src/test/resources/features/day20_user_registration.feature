@@ -12,6 +12,7 @@ Feature: registration feature
     And user provides email "<email>"
     And user provides the firstPassword as "<firstPassword>" and secondPassword as "<secondPassword>"
     Then user clicks on the register button and see the success message as "<successMessage>"
+    Then capture the screenshot
 
     Examples: user info
       |SSN|firstName|lastName|address|phoneNumber|username|email|firstPassword|secondPassword|successMessage|

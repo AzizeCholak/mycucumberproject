@@ -10,6 +10,7 @@ Feature: admin login feature
       |CWoburn       |Cw192837?     |
     And user clicks on the login button
     Then verify the login is successful
+    Then capture the screenshot
 #    Then close the application
 
 #    DATA TABLES:

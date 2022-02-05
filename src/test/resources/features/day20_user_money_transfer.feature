@@ -24,4 +24,5 @@ Feature: money transfer feature
     When user provides the balance "3"
     And user types the description
     Then user makes the money transfer and verify success message
+    Then capture the screenshot
     Then close the application

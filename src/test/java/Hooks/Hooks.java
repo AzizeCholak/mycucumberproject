@@ -6,22 +6,19 @@ import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
-
 public class Hooks {
     @Before
     public void setUp(){
 //        RUNS BEFORE EACH SCENARIO
         System.out.println("Before Hooks");
     }
-
     @After
     public void tearDown(Scenario scenario){
         final byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
         if (scenario.isFailed()) {
-//     If a scenario fails, then take the screenshot!!!!
+//            Is a scenario fails, then take the screenshot!!!!!
             scenario.attach(screenshot, "image/png","screenshots");
         }
- //       Driver.closeDriver();
+//        Driver.closeDriver();
     }
-
 }

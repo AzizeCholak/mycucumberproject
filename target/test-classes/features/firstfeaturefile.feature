@@ -22,6 +22,7 @@ Feature: Google_Search_Functionality
   Scenario: TC01_iphone_search
     When user search for iPhone on google
     Then verify the result has iPhone related results
+    Then capture the screenshot
     Then close the application
 
 #We can create multiple Scenarios
@@ -29,6 +30,7 @@ Feature: Google_Search_Functionality
   Scenario: TC02_teapot_search
     When user search for Tea Pot on google
     Then verify the result has Tea Pot related results
+    Then capture the screenshot
 
 #Flower
   @flower_search @wip
@@ -36,6 +38,7 @@ Feature: Google_Search_Functionality
   Scenario: TC03_flower_search
     When user search for flower on google
     Then verify the result has flower related results
+    Then capture the screenshot
 
 #What is a feature file?
 #We write our test scenarios in feature files.
