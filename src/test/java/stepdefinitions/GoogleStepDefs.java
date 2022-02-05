@@ -38,10 +38,12 @@ public class GoogleStepDefs {
     public void user_search_for_tea_pot_on_google() {
         googlePage.googleSearchBox.sendKeys("Tea Pot"+Keys.ENTER);
     }
+
     @Then("verify the result has Tea Pot related results")
     public void verify_the_result_has_tea_pot_related_results() {
         String title = Driver.getDriver().getTitle();
         Assert.assertTrue(title.contains("Tea Pot"));
+        Assert.assertTrue(false);//FAILING ON PURPOSE
     }
 
     @When("user search for flower on google")

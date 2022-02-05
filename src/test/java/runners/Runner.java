@@ -6,9 +6,16 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin = {
+                "pretty",//This is used for more readable reports or outputs
+                "html:target/default-cucumber-reports.html",
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+        },
         features = "./src/test/resources/features",
-        glue = "stepdefinitions",
-        tags = "@admin_login",
+        glue = {"stepdefinitions", "Hooks"},//This will run stepdefinitions and Hooks folder
+        tags = "@google_search",
         dryRun = false
 
 )
