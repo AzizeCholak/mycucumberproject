@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features",
         glue = {"stepdefinitions", "Hooks"},//This will run stepdefinitions and Hooks folder
-        tags = "@google_search",
+        tags = "@excel_login",
         dryRun = false
 
 )

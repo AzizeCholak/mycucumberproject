@@ -1,38 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="29.72">
-    <testcase classname="Google_Search_Functionality" name="TC01_iphone_search" time="12.145">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.253">
+    <testcase classname="database features" name="TC01_read_customer_information" time="1.826">
         <system-out>
-            <![CDATA[Given user is on the google page............................................passed
-When user search for iPhone on google.......................................passed
-Then verify the result has iPhone related results...........................passed
-Then capture the screenshot.................................................passed
-Then close the application..................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Google_Search_Functionality" name="TC02_teapot_search" time="3.069">
-        <failure message="" type="java.lang.AssertionError">
-            <![CDATA[Given user is on the google page............................................passed
-When user search for Tea Pot on google......................................passed
-Then verify the result has Tea Pot related results..........................failed
-Then capture the screenshot.................................................skipped
-
-StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinitions.GoogleStepDefs.verify_the_result_has_tea_pot_related_results(GoogleStepDefs.java:46)
-	at ✽.verify the result has Tea Pot related results(file:///C:/Users/Azize/IdeaProjects/mycucumberproject/./src/test/resources/features/firstfeaturefile.feature:32)
-]]>
-        </failure>
-    </testcase>
-    <testcase classname="Google_Search_Functionality" name="TC03_flower_search" time="13.97">
-        <system-out>
-            <![CDATA[Given user is on the google page............................................passed
-When user search for flower on google.......................................passed
-Then verify the result has flower related results...........................passed
-Then capture the screenshot.................................................passed
+            <![CDATA[Given user connects to the database.........................................passed
+And user gets the "*" from "tp_customer" table..............................passed
+And user reads all of the "ssn" column data.................................passed
 ]]>
         </system-out>
     </testcase>

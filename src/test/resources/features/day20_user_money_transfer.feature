@@ -1,4 +1,4 @@
-@money_transfer
+@money_transfer @smoke
 Feature: money transfer feature
 
   Scenario Outline: login_with_customer_credentials

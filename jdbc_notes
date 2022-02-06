@@ -1,0 +1,10 @@
+1.Add DBUtils in ur utilities
+2.add postgresql dependency
+<dependency>
+   <groupId>org.postgresql</groupId>
+   <artifactId>postgresql</artifactId>
+   <version>42.2.8</version>
+</dependency>
+3.Create a folder under features : Databaseyour
+4.Create feature file :day23_read.feature
+5.Write your steps in the feature file
